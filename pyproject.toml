@@ -1,0 +1,20 @@
+[project]
+name = "NCEISync"
+version = "0.1.1"
+requires-python = "==3.12.*"
+dependencies = [
+    "beautifulsoup4",
+    "lxml",
+    "aiosqlite",
+]
+
+[[index]]
+url = "https://mirrors.cernet.edu.cn/pypi/web/simple"
+default = true
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project.scripts]
+NCEISync = "NCEISync.main:main"
